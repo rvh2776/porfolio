@@ -1,0 +1,39 @@
+
+.logo {
+    color: #FFF;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid #FFF;
+    width: 17ch;
+    overflow: hidden;
+    animation: typing 3s steps(16), 1 normal both, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 16ch; } /* Ajusta al ancho máximo del texto */
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.navbar-button {
+    width: 130px; /* Establece el ancho fijo */
+    height: 30px; /* Establece el alto fijo */
+    display: flex; /* Asegura que el contenido se centre */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    font-size: 14px; /* Ajusta el tamaño del texto para que se vea bien */
+}
+
+.navbar-icon {
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+    color: #ffffff; /* Color inicial del icono */
+}
+
+.navbar-icon:hover {
+    transform: scale(1.2);
+    color: #007bff;
+}

@@ -25,18 +25,19 @@ const PageCover = React.forwardRef((props, ref) => {
 });
 
 // Componente Page
-// const Page = React.forwardRef((props, ref) => {
-//   return (
-//     <div className="page" ref={ref}>
-//       <div className="page-content">
-//         <h2 className="page-header">{props.number}</h2>
-//         <div className="page-image"></div>
-//         <div className="page-text mb-1">{props.children}</div>
-//         <div className="page-footer">{props.number }</div>
-//       </div>
-//     </div>
-//   );
-// });
+// eslint-disable-next-line react/display-name
+const Page = React.forwardRef((props, ref) => {
+  return (
+    <div className="page" ref={ref}>
+      <div className="page-content">
+        <h2 className="page-header">{props.number}</h2>
+        <div className="page-image"></div>
+        <div className="page-text mb-1">{props.children}</div>
+        <div className="page-footer">{props.number }</div>
+      </div>
+    </div>
+  );
+});
 
 // Componente DemoBook
 class Book extends React.Component {
@@ -80,7 +81,7 @@ class Book extends React.Component {
         <HTMLFlipBook
           className="flip-book html-book demo-book"
           width={550}
-          height={680}
+          height={640}
           size="stretch" // "stretch" "fixed"
           minWidth={315}
           maxWidth={900}
@@ -94,36 +95,17 @@ class Book extends React.Component {
           autoSize={true}
         >
           <PageCover>Rafael Velazquez</PageCover>
-          {/* <Page number={''}></Page> */}
+          <Page number={''}></Page>
           <SkillsPage number={1} />
           <SkillsPage number={2} />
           <SkillsPage number={3} />
           <SkillsPage number={4} />
-
-          {/* <Page number={2}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quasi eaque quis deserunt eos doloremque! Animi, dolorum? Sint, cum cupiditate ab sequi pariatur delectus nemo quo eaque assumenda expedita ex!</Page>
-          <Page number={3}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus officia velit commodi quam voluptate obcaecati quibusdam! Veniam odio harum nesciunt assumenda repudiandae quia ea quis magni. Repellat sequi ad temporibus.</Page>
-          <Page number={4}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus officia velit commodi quam voluptate obcaecati quibusdam! Veniam odio harum nesciunt assumenda repudiandae quia ea quis magni. Repellat sequi ad temporibus.</Page>
-          <Page number={5}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus officia velit commodi quam voluptate obcaecati quibusdam! Veniam odio harum nesciunt assumenda repudiandae quia ea quis magni. Repellat sequi ad temporibus.</Page> */}
-          {/* Añade más páginas según sea necesario */}
+          <Page number={''}></Page>
           <PageCover>Contactame!</PageCover>
+
         </HTMLFlipBook>
 
-        <div className="container mt-3">
-          <div>
-            <button type="button" onClick={this.prevButtonClick}>
-              Previous page
-            </button>
-
-            [<span>{this.state.page}</span> of <span>{this.state.totalPage}</span>]
-            {/* <button type="button" onClick={this.nextButtonClick}> */}
-            <button type="button" onClick={this.nextButtonClick}>
-              Next page
-            </button>
-          </div>
-          <div>
-            {/* State: <i>{this.state.state}</i>, orientation: <i>{this.state.orientation}</i> */}
-          </div>
-        </div>
+        
       </div>
       </div>
       </div>
