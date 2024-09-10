@@ -1,13 +1,24 @@
+<hr>
+<br>
+<p align="center">
+  <img src="public/images/construccion.jpg" alt="Vista del Portfolio">
+</p>
+
+### <font color='lime'><p align="center"> Gracias por tu visita!! </p></font>
+
+<hr>
+<br>
+
 # Porfolio personal.
 
-## Descripción
+### Descripción
 Proyecto creado para representar un porfolio personal que emula un libro.
 
-### Tecnologías utilizadas
+#### Tecnologías utilizadas
 
 - React
 
-### Para probarlo
+#### Para probarlo
 
 1. Clona el repositorio:
 
@@ -32,7 +43,7 @@ Proyecto creado para representar un porfolio personal que emula un libro.
     yarn dev
     ```
 
-### Scripts Disponibles
+#### Scripts Disponibles
 * **npm run dev:** Inicia la aplicación en modo de desarrollo.
 * **npm run build:** Construye la aplicación para producción.
 * **npm run start:** Inicia la aplicación en modo de producción.
