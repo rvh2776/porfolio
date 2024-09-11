@@ -36,16 +36,9 @@ body {
     background-size: cover;
 }
 
-/* .flip-book {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
-    margin: 0 auto;
-    display: none;
-    z-index: 100;
-} */
-
 .flip-book {
     margin: 0 auto;
-    transform: scale(0.95); /* Ajusta el tamaño si se ve demasiado grande */
+    transform: scale(.90); /* Ajusta el tamaño si se ve demasiado grande */
     transition: transform 0.3s ease-in-out; /* Añade un efecto de suavizado al redimensionar */
 }
 

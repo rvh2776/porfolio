@@ -1,35 +1,39 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import './NavBar.css';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
-export const NavBar = () => {
+// eslint-disable-next-line react/prop-types
+export const NavBar = ({ onNavigate }) => {
 
-    useEffect(() => {
-        const logo = document.querySelector('.logo');
-        const typingDuration = 3500; // Duración en milisegundos, debe coincidir con la duración de la animación CSS
+    // useEffect(() => {
+    //     const logo = document.querySelector('.logo');
+    //     const typingDuration = 3500; // Duración en milisegundos, debe coincidir con la duración de la animación CSS
     
-        const timer = setTimeout(() => {
-          if (logo) {
-            logo.style.borderRight = 'none'; // Elimina el cursor
-            logo.style.animation = 'none'; // Detiene la animación de parpadeo
-          }
-        }, typingDuration);
+    //     const timer = setTimeout(() => {
+    //       if (logo) {
+    //         logo.style.borderRight = 'none'; // Elimina el cursor
+    //         logo.style.animation = 'none'; // Detiene la animación de parpadeo
+    //       }
+    //     }, typingDuration);
     
-        return () => clearTimeout(timer); // Limpia el temporizador al desmontar el componente
+    //     return () => clearTimeout(timer); // Limpia el temporizador al desmontar el componente
     
-      }, []);
+    //   }, []);
 
   return (
 
-    <nav className="navbar fixed-top bg-dark border-bottom border-body" data-bs-theme="dark">
+      <nav className="navbar fixed-top bg-dark border-bottom border-body" data-bs-theme="dark">
 
       <div className="container-fluid d-flex justify-content-between align-items-center">
-        <h2 className="logo mx-2 mt-1 text-start logo">Rafael Velazquez.</h2>
+        {/* <h2 className="logo mx-2 mt-1 text-start logo">Rafael Velazquez.</h2> */}
+        <div className="logo-container">
+            <h2 className="logo ms-2 pt-1">Rafael Velazquez.</h2>
+        </div>
         <div className="d-flex justify-content-center flex-grow-1">
-          <button className="btn btn-sm btn-outline-primary me-1 navbar-button" type="button">HOME</button>
-          <button className="btn btn-sm btn-outline-warning mx-1 navbar-button" type="button">SKILLS</button>
-          <button className="btn btn-sm btn-outline-success mx-1 navbar-button" type="button">PROJECTS</button>
-          <button className="btn btn-sm btn-outline-info mx-1 navbar-button" type="button">ABOUT</button>
+          <button className="btn btn-sm btn-outline-primary me-1 navbar-button"  onClick={() => onNavigate(0) } >HOME</button>
+          <button className="btn btn-sm btn-outline-warning mx-1 navbar-button" onClick={() => onNavigate(1)}>SKILLS</button>
+          <button className="btn btn-sm btn-outline-success mx-1 navbar-button" onClick={() => onNavigate(3)}>PROJECTS</button>
+          <button className="btn btn-sm btn-outline-info mx-1 navbar-button" onClick={() => onNavigate(7)}>ABOUT</button>
         </div>
 
         <div className="d-flex align-items-center">

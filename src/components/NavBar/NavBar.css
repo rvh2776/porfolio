@@ -1,13 +1,33 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros contenidos */
+}
+
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+}
 
 .logo {
     color: #FFF;
     display: block;
     font-family: monospace;
     white-space: nowrap;
-    border-right: 4px solid #FFF;
+    /* border-right: 4px solid #FFF; */
     width: 17ch;
     overflow: hidden;
-    animation: typing 3s steps(16), 1 normal both, blink 0.75s step-end infinite;
+    /* animation: typing 3s steps(16), 1 normal both, blink 0.75s step-end infinite; */
+    animation: typing 3s steps(16), 1 normal both;
 }
 
 @keyframes typing {
