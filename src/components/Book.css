@@ -44,19 +44,22 @@ body {
 
 .page .page-content {
     width: 100%;
-    height: 100%;
+    height: 97%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: stretch;
+    overflow-y: auto;
+    margin-bottom: 1rem;
 }
 
-.page .page-content .page-header {
+/* .page .page-content .page-header {
     height: 30px;
     font-size: 100%;
     text-transform: uppercase;
     text-align: center;
-}
+} */
+
 
 .page-cover-backup {
     display: flex;
@@ -190,6 +193,10 @@ body {
     color: #785e3a;
     border: 1px solid #998466;
 }
+/* 
+.page-foter {
+    justify-content: space-between;
+} */
 
 .page.--left .page-footer {
     height: 30px;

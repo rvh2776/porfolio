@@ -17,6 +17,13 @@ const SkillsPage = React.forwardRef((props, ref) => {
             <li>React</li>
             <li>Node.js</li>
             <li>NestJS</li>
+            <li>NestJS</li>
+            <li>NestJS</li>
+            <li>NestJS</li>
+            <li>NestJS</li>
+            <li>NestJS</li>
+            <li>NestJS</li>
+
             {/* Añade más habilidades */}
         </ul>
     </PageBase>

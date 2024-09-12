@@ -9,8 +9,8 @@ const PageBase = React.forwardRef((props, ref) => {
       <div className="page-content">
         <h2 className="page-header">{props.title}</h2>
         <div className="page-body">{props.children}</div>
-        <div className="page-footer">{props.number}</div>
       </div>
+      <div className="page-footer">{props.number}</div>
     </div>
   );
 });

@@ -6,5 +6,6 @@
 .skills-list {
     background: #333444;
     text-align: center;
-    color: #fff
+    color: #fff;
+    margin-top: 1rem;
 }

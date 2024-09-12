@@ -17,8 +17,8 @@ const PageCover = React.forwardRef((props, ref) => {
         <div className="cover-photo">
           <img src="/images/portada.jpeg" alt="Rafael" />
         </div>
-        <h2 className="cover-title text-center">{props.children}</h2>
-        <p className="cover-description text-center">Soy desarrollador fullstack con experiencia en <br/>JavaScript, NodeJs, React, NestJs, CSS, HTML y tecnologías asociadas...<br/>
+        <h2 className="cover-title text-center m-auto">{props.children}</h2>
+        <p className="cover-description text-center mt-4">Soy desarrollador fullstack con experiencia en <br/>JavaScript, NodeJs, React, NestJs, CSS, HTML y tecnologías asociadas...<br/>
         Especializado en Back-end con conocimientos significativos en Front-end, lo que me permite tener una comprensión integral de todo el ciclo de desarrollo.</p>
       </div>
     </div>
@@ -38,8 +38,7 @@ const PageCoverBack = React.forwardRef((props, ref) => {
           <img src="/images/portada.jpeg" alt="Rafael" />
         </div> */}
         <h2 className="cover-title text-center">{props.children}</h2>
-        <p className="cover-description text-center">Soy desarrollador fullstack con experiencia en <br/>JavaScript, NodeJs, React, NestJs, CSS, HTML y tecnologías asociadas...<br/>
-        Especializado en Back-end con conocimientos significativos en Front-end, lo que me permite tener una comprensión integral de todo el ciclo de desarrollo.</p>
+        <p className="cover-description text-center m-auto">Descubre las habilidades de un desarrollador full stack especializado en back-end, enfocado en crear soluciones eficientes y escalables.<br/> A través de proyectos reales y ejemplos prácticos,<br/> este libro te guía por un recorrido de desarrollos <br/>que abordan los desafíos actuales del sector. <br/>Desde la integración de APIs<br/> hasta la optimización de sistemas complejos,<br/> cada página refleja el compromiso con el trabajo<br/> y la búsqueda de la mejor solución para cada cliente.</p>
       </div>
     </div>
   );
@@ -49,14 +48,16 @@ const PageCoverBack = React.forwardRef((props, ref) => {
 // eslint-disable-next-line react/display-name
 const Page = React.forwardRef((props, ref) => {
   return (
-    <div className="page" ref={ref}>
-      <div className="page-content">
-        <h2 className="page-header">{props.number}</h2>
-        <div className="page-image"></div>
-        <div className="page-text mb-1">{props.children}</div>
-        <div className="page-footer">{props.number }</div>
+    <>
+      <div className="page" ref={ref}>
+        <div className="page-content">
+          <h2 className="page-header">{props.number}</h2>
+          <div className="page-image"></div>
+          <div className="page-text">{props.children}</div>
+        </div>
       </div>
-    </div>
+      <div className="page-footer">{props.number}</div>
+    </>
   );
 });
 
