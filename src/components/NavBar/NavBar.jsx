@@ -30,10 +30,10 @@ export const NavBar = ({ onNavigate }) => {
             <h2 className="logo ms-2 pt-1">Rafael Velazquez.</h2>
         </div>
         <div className="d-flex justify-content-center flex-grow-1">
-          <button className="btn btn-sm btn-outline-primary me-1 navbar-button"  onClick={() => onNavigate(0) } >HOME</button>
+          <button className="btn btn-sm btn-outline-primary me-1 navbar-button"  onClick={() => onNavigate(0) } >FRONT</button>
           <button className="btn btn-sm btn-outline-warning mx-1 navbar-button" onClick={() => onNavigate(1)}>SKILLS</button>
           <button className="btn btn-sm btn-outline-success mx-1 navbar-button" onClick={() => onNavigate(3)}>PROJECTS</button>
-          <button className="btn btn-sm btn-outline-info mx-1 navbar-button" onClick={() => onNavigate(7)}>ABOUT</button>
+          <button className="btn btn-sm btn-outline-info mx-1 navbar-button" onClick={() => onNavigate(7)}>BACK</button>
         </div>
 
         <div className="d-flex align-items-center">

@@ -7,7 +7,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    /* background: linear-gradient(rgba(28, 28, 0, 0.9), rgba(128, 128, 200, 0.5)); */
 }
 
 .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
@@ -85,7 +85,7 @@ body {
     /* color: #555; */
     border-radius: 4px;
     background-image: 
-      linear-gradient(160deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0) 50%), /* Efecto de brillo */
+      linear-gradient(160deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0) 50%), /* Efecto de brillo */
       url(/images/fondoPortada.jpg); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
@@ -119,7 +119,7 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), transparent 70%); /* Brillo diagonal */
-    opacity: 0.7; /* Ajusta la transparencia para simular el brillo del plastificado */
+    opacity: 0.2; /* Ajusta la transparencia para simular el brillo del plastificado */
     pointer-events: none;
     z-index: 1;
     mix-blend-mode: screen; /* Mezcla para crear un efecto de luz */
@@ -149,7 +149,8 @@ body {
     background-color: rgba(100, 100, 100, .7);
     border-radius: 2%;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
+    padding: .3rem;
   }
 
 .page.page-cover.page-cover-top {

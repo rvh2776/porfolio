@@ -38,7 +38,7 @@ const PageCoverBack = React.forwardRef((props, ref) => {
           <img src="/images/portada.jpeg" alt="Rafael" />
         </div> */}
         <h2 className="cover-title text-center">{props.children}</h2>
-        <p className="cover-description text-center m-auto">Descubre las habilidades de un desarrollador full stack especializado en back-end, enfocado en crear soluciones eficientes y escalables.<br/> A través de proyectos reales y ejemplos prácticos,<br/> este libro te guía por un recorrido de desarrollos <br/>que abordan los desafíos actuales del sector. <br/>Desde la integración de APIs<br/> hasta la optimización de sistemas complejos,<br/> cada página refleja el compromiso con el trabajo<br/> y la búsqueda de la mejor solución para cada cliente.</p>
+        <p className="cover-description text-center m-auto">Descubre las habilidades de un desarrollador full stack especializado en back-end,<br/> enfocado en crear soluciones eficientes y escalables.<br/> A través de proyectos reales y ejemplos prácticos,<br/> este libro te guía por un recorrido de desarrollos <br/>que abordan los desafíos actuales del sector. <br/>Desde la integración de APIs<br/> hasta la optimización de sistemas complejos,<br/> cada página refleja el compromiso con el trabajo<br/> y la búsqueda de la mejor solución para cada cliente.</p>
       </div>
     </div>
   );
