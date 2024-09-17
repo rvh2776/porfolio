@@ -4,7 +4,7 @@ import HTMLFlipBook from 'react-pageflip';
 import SkillsPage from './SkillsPage/SkillsPage';
 import { NavBar } from './NavBar/NavBar';
 import './Book.css';
-import Projects from './projects/projects';
+import Projects from './Projects/Projects';
 
 // eslint-disable-next-line react/display-name
 const PageCover = React.forwardRef((props, ref) => {
