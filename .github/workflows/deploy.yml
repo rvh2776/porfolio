@@ -32,4 +32,4 @@ jobs:
         echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -H jetcom.com.ar >> ~/.ssh/known_hosts
-        scp -r dist/* user@jetcom.com.ar:/var/www/porfolio
+        scp -r dist/* root@jetcom.com.ar:/var/www/porfolio
