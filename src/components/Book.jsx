@@ -4,6 +4,7 @@ import HTMLFlipBook from 'react-pageflip';
 import SkillsPage from './SkillsPage/SkillsPage';
 import { NavBar } from './NavBar/NavBar';
 import './Book.css';
+import Projects from './projects/projects';
 
 // eslint-disable-next-line react/display-name
 const PageCover = React.forwardRef((props, ref) => {
@@ -147,7 +148,7 @@ class Book extends React.Component {
               <PageCover number={0}>Rafael Velazquez</PageCover>
               <Page number={''}></Page>
               <SkillsPage number={1} />
-              <SkillsPage number={2} />
+              <Projects number={2} />
               <SkillsPage number={3} />
               <SkillsPage number={4} />
               <Page number={''}></Page>
