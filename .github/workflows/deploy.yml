@@ -1,0 +1,28 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main  # Cambia esto si tu rama de producción se llama diferente
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build
+
+      - name: Copy files via SSH
+        run: |
+          scp -r dist/* root@jetcom.com.ar:/var/www/porfolio
