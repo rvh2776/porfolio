@@ -1,7 +1,7 @@
 <hr>
 <br>
 <p align="center">
-  <img src="public/images/construccion.jpg" alt="Vista del Portfolio">
+  <img src="public/images/construccion.jpg" alt="Vista del Portfolio - Contruccion">
 </p>
 
 ### <font color='lime'><p align="center"> Gracias por tu visita!! </p></font>
