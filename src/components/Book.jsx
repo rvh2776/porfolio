@@ -3,8 +3,10 @@ import React, { createRef } from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import SkillsPage from './SkillsPage/SkillsPage';
 import { NavBar } from './NavBar/NavBar';
+import Projects from './PageMovieFront/projects';
+import PageMovieBack from './PageMovieBack/PageMovieBack';
+
 import './Book.css';
-import Projects from './projects/Projects';
 
 // eslint-disable-next-line react/display-name
 const PageCover = React.forwardRef((props, ref) => {
@@ -149,7 +151,7 @@ class Book extends React.Component {
               <Page number={''}></Page>
               <SkillsPage number={1} />
               <Projects number={2} />
-              <SkillsPage number={3} />
+              <PageMovieBack number={3} />
               <SkillsPage number={4} />
               <Page number={''}></Page>
               <PageCoverBack number={7}>Contactame!</PageCoverBack>

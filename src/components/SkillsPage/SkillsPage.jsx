@@ -21,7 +21,7 @@ const SkillsPage = React.forwardRef((props, ref) => {
       </p>
       <p className="about-paragraph">
         Comencé con HTML, CSS, y luego avancé a JavaScript, Node.js, Express y React. 
-        Más tarde, exploré tecnologías como NestJS, PostgreSQL, MongoDB y Docker, entre otras.
+        Más tarde, exploré tecnologías como NestJS, PostgresSQL, MongoDB y Docker, entre otras.
       </p>
       <p className="about-paragraph">
         Disfruto el desarrollo back-end, donde encuentro un gusto especial en resolver desafíos, 
