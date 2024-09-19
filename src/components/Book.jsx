@@ -3,10 +3,12 @@ import React, { createRef } from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import SkillsPage from './SkillsPage/SkillsPage';
 import { NavBar } from './NavBar/NavBar';
-import Projects from './PageMovieFront/projects';
+import Projects from "./PageMovieFront/Projects";
 import PageMovieBack from './PageMovieBack/PageMovieBack';
 
 import './Book.css';
+
+
 
 // eslint-disable-next-line react/display-name
 const PageCover = React.forwardRef((props, ref) => {
