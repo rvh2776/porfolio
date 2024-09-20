@@ -5,10 +5,9 @@ import SkillsPage from './SkillsPage/SkillsPage';
 import { NavBar } from './NavBar/NavBar';
 import Projects from "./PageMovieFront/Projects";
 import PageMovieBack from './PageMovieBack/PageMovieBack';
+import PageWebAdminFront from './PageWebAdminFront/PageWebAdminFront';
 
 import './Book.css';
-
-
 
 // eslint-disable-next-line react/display-name
 const PageCover = React.forwardRef((props, ref) => {
@@ -154,7 +153,7 @@ class Book extends React.Component {
               <SkillsPage number={1} />
               <Projects number={2} />
               <PageMovieBack number={3} />
-              <SkillsPage number={4} />
+              <PageWebAdminFront number={4} />
               <Page number={''}></Page>
               <PageCoverBack number={7}>Contactame!</PageCoverBack>
 

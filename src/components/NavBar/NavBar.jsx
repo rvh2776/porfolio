@@ -73,7 +73,7 @@ export const NavBar = ({ onNavigate }) => {
             {dropdownOpen && (
               <ul className="dropdown-menu show custom-dropdown">
                 <li><button className="btn btn-sm btn-outline-success dropdown-item" onClick={() => onNavigate(3)}>Movie Page Creator</button></li>
-                <li><button className="btn btn-sm btn-outline-success dropdown-item" onClick={() => onNavigate(5)}>Project 3</button></li>
+                <li><button className="btn btn-sm btn-outline-success dropdown-item" onClick={() => onNavigate(5)}>WebAdminISP</button></li>
                 {/* Agregar más proyectos según sea necesario */}
               </ul>
             )}
