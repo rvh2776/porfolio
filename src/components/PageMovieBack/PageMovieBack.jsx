@@ -31,7 +31,7 @@ const PageMovieBack = React.forwardRef((props, ref) => {
                 <strong>Tecnologías Usadas:</strong><br/>
                 Node.js, Express, MongoDB, Mongoose.
             </p>
-        <div className="button-container">
+        <div className="button-container mt-5">
             <a href="https://github.com/rvh2776/DePelis_back" target="_blank" className="btn btn-primary mx-2">Ver en GitHub</a>
             <a href="https://github.com/rvh2776/dePelis_front" target="_blank" className="btn btn-secondary disabled">Ver Demo</a>
         </div>

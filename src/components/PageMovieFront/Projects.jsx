@@ -30,9 +30,9 @@ const Projects = React.forwardRef((props, ref) => {
           <strong>Tecnologías Usadas:</strong><br/>
           HTML, CSS, JavaScript, Webpack, MongoDB.
         </p>
-      <div className="button-container">
-        <a href="https://github.com/rvh2776/dePelis_front" target="_blank" className="btn btn-primary mx-2">Ver en GitHub</a>
-        <a href="https://github.com/rvh2776/dePelis_front" target="_blank" className="btn btn-secondary disabled">Ver Demo</a>
+      <div className="button-container mt-4">
+        <a href="https://github.com/rvh2776/dePelis_front" target="_blank" className="btn btn-primary mx-2 mt-3">Ver en GitHub</a>
+        <a href="https://github.com/rvh2776/dePelis_front" target="_blank" className="btn btn-secondary mt-3 disabled">Ver Demo</a>
       </div>
 
     </PageBase>
