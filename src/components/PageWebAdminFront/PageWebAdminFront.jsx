@@ -14,13 +14,13 @@ const PageWebAdminFront = React.forwardRef((props, ref) => {
         number={props.number}
         className="skills-page"
     >
-        {/* <div className="project-card"/>
-            <img src="/images/WebAdminFront.png" className="project-image" alt="Imagen del Proyecto"/>
-        <div className="project-content"/> */}
+        <div className="project-card"/>
+            {/* <img src="/images/WebAdminFront.png" className="project-image" alt="Imagen del Proyecto"/> */}
+        <div className="project-content"/>
 
         <ProjectVideo src="/videos/webadminisp-demo.mp4" />
 
-            <p className="project-description">
+            <p className="project-description mt-2">
                 WebAdminISP es una solución para la gestión de proveedores de servicios de Internet (ISP), desarrollada en equipo.
                 Facilita la administración, la interacción con los clientes y la automatización de procesos administrativos.
                 <br />Cuenta con un dashboard intuitivo para la administración, chat en vivo, manejo de usuarios, visualización de facturas y gestión de servicios.

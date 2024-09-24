@@ -79,7 +79,7 @@ export const NavBar = ({ onNavigate }) => {
             )}
           </div>
 
-          <button className="btn btn-sm btn-outline-info mx-1 navbar-button" onClick={() => onNavigate(7)}>BACK</button>
+          <button className="btn btn-sm btn-outline-info mx-1 navbar-button" onClick={() => onNavigate(9)}>BACK</button>
         </div>
 
         <div className="d-flex align-items-center">

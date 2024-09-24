@@ -3,9 +3,12 @@ import React, { createRef } from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import SkillsPage from './SkillsPage/SkillsPage';
 import { NavBar } from './NavBar/NavBar';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Projects from "./PageMovieFront/Projects";
 import PageMovieBack from './PageMovieBack/PageMovieBack';
 import PageWebAdminFront from './PageWebAdminFront/PageWebAdminFront';
+import PageWebAdminBack from './PageWebAdminBack/PageWebAdminBack';
+
 
 import './Book.css';
 
@@ -38,10 +41,21 @@ const PageCoverBack = React.forwardRef((props, ref) => {
       data-density="hard"
     >
       <div className="page-content page-cover-content">
-        {/* <div className="cover-photo">
-          <img src="/images/portada.jpeg" alt="Rafael" />
-        </div> */}
         <h2 className="cover-title text-center">{props.children}</h2>
+        <div className="d-flex align-items-center mx-auto my-auto pt-4 px-3 cover-description">
+          <a href="https://github.com/rvh2776" target="_blank" rel="noopener noreferrer" className="mx-2 navbar-icon">
+            <FaGithub size={30}/>
+            <p>Github</p>
+          </a>
+          <a href="https://www.linkedin.com/in/rafael-velazquez-25a928165/" target="_blank" rel="noopener noreferrer" className="mx-2 navbar-icon">
+            <FaLinkedin size={30} />
+            <p>Linkedin</p>
+          </a>
+          <a href="mailto:rafael.vh@gmail.com" className="mx-2 navbar-icon">
+            <FaEnvelope size={30} />
+            <p>Email</p>
+          </a>
+        </div>
         <p className="cover-description text-center m-auto">Descubre las habilidades de un desarrollador full stack especializado en back-end,<br/> enfocado en crear soluciones eficientes y escalables.<br/> A través de proyectos reales y ejemplos prácticos,<br/> este libro te guía por un recorrido de desarrollos <br/>que abordan los desafíos actuales del sector. <br/>Desde la integración de APIs<br/> hasta la optimización de sistemas complejos,<br/> cada página refleja el compromiso con el trabajo<br/> y la búsqueda de la mejor solución para cada cliente.</p>
       </div>
     </div>
@@ -154,8 +168,10 @@ class Book extends React.Component {
               <Projects number={2} />
               <PageMovieBack number={3} />
               <PageWebAdminFront number={4} />
+              <PageWebAdminBack number={5}/>
               <Page number={''}></Page>
-              <PageCoverBack number={7}>Contactame!</PageCoverBack>
+              <Page number={''}></Page>
+              <PageCoverBack number={9}>Contactame!</PageCoverBack>
 
             </HTMLFlipBook>
 

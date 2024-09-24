@@ -54,7 +54,7 @@ const ProjectVideo = ({ src }) => {
         src={src}
         width="100%"
         height="140"
-        loop
+        // loop
         muted
         controls
         playsInline
