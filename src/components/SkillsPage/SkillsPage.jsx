@@ -12,6 +12,9 @@ const SkillsPage = React.forwardRef((props, ref) => {
         number={props.number}
         className="skills-page"
     >
+    <div className="project-card"/>
+      {/* <img src="/images/WebAdminFront.png" className="project-image" alt="Imagen del Proyecto"/> */}
+    <div className="project-content"/>
     <div className="about-section">
       <h2 className="about-title">Sobre mí</h2>
       <p className="about-paragraph">
